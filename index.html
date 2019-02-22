@@ -23,55 +23,63 @@
         <div id="loader"></div>
     </div>
 
-    <div style="display:none;" id="wrapper">
+    <div style="display:none;" id="home-wrapper">
         <div class="container-fluid">
             <div class="row no-gutters v-full">
-                <div id="home" class="main-content animate-bottom">
+                <div class="main-content animate-bottom">
                     <div class="content-head">
                         <h2><span class="name">Renée Wysocki</span></h2>
                         <h4><span class="title"></span></h4>
                     </div>
                     <div class="content">
-                        <div id="about-menu" class="box-wrapper">
-                            <div class="inner-box-wrapper">
-                                <div class="box">
-                                    <div class="box-content">
-                                        <i class="fas fa-id-card fa-3x"></i>
-                                        <h4><span style="color: #ff0da5">About </span>Me</h4>
+                        <a href="./about.html">
+                            <div id="about-menu" class="box-wrapper">
+                                <div class="inner-box-wrapper">
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <i class="fas fa-id-card fa-3x"></i>
+                                            <h4><span style="color: #ff0da5">About </span>Me</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="resume-menu" class="box-wrapper">
-                            <div class="inner-box-wrapper">
-                                <div class="box">
-                                    <div class="box-content">
-                                        <i class="fas fa-toolbox fa-3x"></i>
-                                        <h4>My <span style="color: #e40db0"> Portfolio</span> </h4>
+                        </a>
+                        <a href="./portfolio.html">
+                            <div id="resume-menu" class="box-wrapper">
+                                <div class="inner-box-wrapper">
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <i class="fas fa-toolbox fa-3x"></i>
+                                            <h4>My <span style="color: #e40db0"> Portfolio</span> </h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="portfolio-menu" class="box-wrapper">
-                            <div class="inner-box-wrapper">
-                                <div class="box">
-                                    <div class="box-content">
-                                        <i class="fas fa-newspaper fa-3x"></i>
-                                        <h4>My <span style="color: #c90dbb">Resume</span></h4>
+                        </a>
+                        <a href="./resume.html">
+                            <div id="portfolio-menu" class="box-wrapper">
+                                <div class="inner-box-wrapper">
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <i class="fas fa-newspaper fa-3x"></i>
+                                            <h4>My <span style="color: #c90dbb">Resume</span></h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="resume-menu" class="box-wrapper">
-                            <div class="inner-box-wrapper">
-                                <div class="box">
-                                    <div class="box-content">
-                                        <i class="fas fa-envelope fa-3x"></i>
-                                        <h4><span style="color: #ae0dc6">Contact</span> Me</h4>
+                        </a>
+                        <a href="./contact.html">
+                            <div id="resume-menu" class="box-wrapper">
+                                <div class="inner-box-wrapper">
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <i class="fas fa-envelope fa-3x"></i>
+                                            <h4><span style="color: #ae0dc6">Contact</span> Me</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -81,13 +89,13 @@
                     var timeout;
 
                     function pageLoad() {
-                        timeout = setTimeout(showPage, 3000);
+                        timeout = setTimeout(showPage, 1000);
                         useTypeIt();
                     }
 
                     function showPage() {
                         document.getElementById("pre-load").style.display = "none";
-                        document.getElementById("wrapper").style.display = "block";
+                        document.getElementById("home-wrapper").style.display = "block";
                     }
                 </script>
                 <script src="js/typeit.min.js"></script>
