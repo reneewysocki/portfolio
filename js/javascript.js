@@ -3,7 +3,7 @@ function useTypeIt() {
         new TypeIt('.title', {
             speed: 200,
             startDelay: 800,
-            strings: ['Web Developer', 'Graphic Designer'],
+            strings: ['WEB DEVELOPER', 'GRAPHIC DESIGNER'],
             breakLines: false,
             loop: true
         });

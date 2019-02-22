@@ -1,5 +1,6 @@
 body {
     background: black;
+    font-family: 'Open Sans', sans-serif;
     background: linear-gradient(45deg, rgb(39,13,255) 0%,rgb(255,13,165) 100%);
 }
 
@@ -113,7 +114,6 @@ body {
 .title {
     color: rgb(255,13,165);
     font-style: italic;
-
 }
 
 #replaceStrings {
@@ -176,6 +176,7 @@ body {
     margin: 8px;
 }
 
-.box-content h5 {
+.box-content h4 {
     text-transform: uppercase;
+    font-weight: 700; 
 }
