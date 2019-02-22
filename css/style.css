@@ -188,13 +188,15 @@ body {
 }
 
 .close {
+    position: absolute;
+    right: 0;
     color: white;
     text-align: right;
     padding-top: 8px;
-    padding-right: 16px;
+    padding-right: 8px;
 }
 
-.close a {
+.close-icon {
     color: #ff0da5;
     text-align: right;
     padding-top: 8px;
