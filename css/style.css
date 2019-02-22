@@ -1,0 +1,181 @@
+body {
+    background: black;
+    background: linear-gradient(45deg, rgb(39,13,255) 0%,rgb(255,13,165) 100%);
+}
+
+@media (min-width: 1440px) {
+    h1 { font-size: 5.653em; }
+
+    h2 { font-size: 3.998em; }
+
+    h3 { font-size: 2.827em; }
+
+    h4 { font-size: 1.999em; }
+
+    h5 { font-size: 1.414em; }
+
+    h6 { font-size: 1em; } 
+
+}
+
+/* BEGIN PRELOADER */
+#pre-load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(0, 0, 20);
+    z-index: 999999;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid rgb(0, 0, 20);
+    border-radius: 50%;
+    border-top: 16px solid #ff0da5;
+    border-bottom: 16px solid #270dff;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+  /* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+/* END PRELOADER */
+
+#wrapper {
+    background: rgb(174,13,198);
+    background: linear-gradient(45deg, rgb(39,13,255) 0%,rgb(255,13,165) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7630e9', endColorstr='#ffbf8d',GradientType=1 );
+    display: none;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 20);
+    box-shadow: 0 2px 130px 0 rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.content-head {
+    margin: 32px;
+}
+
+.name {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.title {
+    color: rgb(255,13,165);
+    font-style: italic;
+
+}
+
+#replaceStrings {
+    color: white;
+}
+
+.box-wrapper {
+    width: 50%;
+    height: 40%;
+    float: left;
+    display: block;
+    align-items: center;
+}
+
+.inner-box-wrapper {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+.box {
+    width: 100%; 
+    height: 75%;
+    display: flex;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 2px 130px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    margin: auto;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    margin: 16px;
+}
+
+.box:hover {
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 2px 130px 0 rgba(255, 13, 165, 0.2);
+}
+
+.box-content {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    text-transform: uppercase;
+}
+
+.box-content i {
+    margin: 8px;
+}
+
+.box-content h5 {
+    text-transform: uppercase;
+}
