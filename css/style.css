@@ -1,6 +1,6 @@
 body {
     background: black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(45deg, rgb(39,13,255) 0%,rgb(255,13,165) 100%);
 }
 
@@ -153,10 +153,9 @@ body {
     color: white;
 }
 
-
 .box-wrapper {
     width: 50%;
-    height: 40%;
+    height: 35%;
     float: left;
     display: block;
     align-items: center;
@@ -174,6 +173,11 @@ body {
     flex-wrap: wrap;
     -webkit-align-content: center;
     align-content: center;
+}
+
+.inner-box-wrapper a {
+    width: 100%;
+    text-decoration: none;
 }
 
 .box {
@@ -229,6 +233,17 @@ body {
     text-align: right;
     padding-top: 8px;
     padding-right: 16px;
+}
+
+.company-name {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: .85em;
+}
+
+#logo {
+    height: 125px;
 }
 
 .content-title {
@@ -304,10 +319,48 @@ body {
 #submit-button {
     background-color: #ff0da5;
     color: white;
+    border: 1px solid white;
 }
 
 #submit-button:hover {
     background-color: #270dff;
     color: white;
+    border: 1px solid white;
 }
 
+/* RESUME  */
+
+#resume-download {
+    background-color: #270dff;
+    color: white;
+    border: 1px solid white;
+}
+
+#resume-download:hover {
+    background-color: #ff0da5;
+    color: white;
+    border: 1px solid white;
+}
+
+.sub-content-container hr {
+    background-color: #270dff;
+}
+
+.resume-title {
+    font-size: 1.3em;
+    color: #ff0da5;
+}
+
+.resume-school {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.resume-location {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.resume-date {
+    font-size: 1em;
+}
