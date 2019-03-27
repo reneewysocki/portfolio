@@ -363,4 +363,19 @@ body {
 
 .resume-date {
     font-size: 1em;
+    text-transform: uppercase;
+}
+
+.skill-bar {
+    padding-bottom: 8px;
+}
+
+.skill-title {
+    font-size: 1.2em;
+}
+.progress {
+    background-color: rgba(0,0,0,0.5);
+}
+.progress-bar {
+    background-color: #A700FF;
 }
