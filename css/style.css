@@ -219,7 +219,7 @@ body {
     font-weight: 700; 
 }
 
-.close {
+.close-container {
     position: absolute;
     right: 0;
     color: white;
@@ -393,6 +393,12 @@ body {
 
 .folio-img {
     width: 100%;
+    margin-bottom: 16px;
+}
+
+.folio-img-sec {
+    max-width: 100%;
+    margin-bottom: 16px;
 }
 
 .modal-title {
@@ -403,8 +409,11 @@ body {
     color: black;
 }
 
-.modal-body p {
+.modal-body {
     text-align: left;
+}
+.tags {
+    color: rgba(0, 0, 0, .5);
 }
 
 .modal-footer button {
@@ -416,3 +425,33 @@ body {
     color: white;
     background-color: #ff0da5;
 }
+
+/* SMALL SCREENS */
+@media only screen and (min-width: 550px) {
+    #portfolio-content {
+        column-count: 2
+    }
+} 
+
+/* MEDIUM SCREENS */
+@media only screen and (min-width: 768px) {
+    #portfolio-content {
+        column-count: 3
+    }
+}
+
+
+/* LARGE SCREENS */
+@media only screen and (min-width: 992px) {
+    #portfolio-content {
+        column-count: 4
+    }
+} 
+
+/* EXTRA LARGE SCREENS */
+@media only screen and (min-width: 1200px) {
+    #portfolio-content {
+        column-count: 5
+    }
+} 
+
