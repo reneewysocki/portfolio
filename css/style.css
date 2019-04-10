@@ -126,7 +126,7 @@ body {
     color: white;
     background-color: rgba(255,255,255, 0.15);
     height: 82%;
-    overflow-y: scroll;
+    overflow-y: scroll; 
     margin: 16px 50px 16px 50px;
     padding: 32px;
     line-height: 1;
@@ -378,4 +378,41 @@ body {
 }
 .progress-bar {
     background-color: #A700FF;
+}
+
+/* ABOUT ME */
+
+.about-text {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+
+/*  PORTFOLIO  */
+
+.folio-img {
+    width: 100%;
+}
+
+.modal-title {
+    color: black;
+}
+
+.modal-content {
+    color: black;
+}
+
+.modal-body p {
+    text-align: left;
+}
+
+.modal-footer button {
+    color: white;
+    background-color: black;
+}
+
+.modal-footer button:hover {
+    color: white;
+    background-color: #ff0da5;
 }
