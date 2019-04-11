@@ -28,7 +28,11 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="pageLoad()">
+
+    <div id="pre-load">
+        <div id="loader"></div>
+    </div>
 
     <div id="portfolio-wrapper" class="wrapper">
         <div class="container-fluid">
@@ -51,6 +55,18 @@
             </div>
         </div>
     </div>
+    <script>
+        var timeout;
+
+        function pageLoad() {
+            timeout = setTimeout(showPage, 1500);
+        }
+
+        function showPage() {
+            document.getElementById("pre-load").style.display = "none";
+            document.getElementById("portfolio-wrapper").style.display = "block";
+        }
+    </script>
     <script src="js/typeit.min.js">
     </script>
     <script src="js/javascript.js"></script>

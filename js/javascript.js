@@ -1,6 +1,65 @@
 $(document).ready(function () {
 
 	const portfolioItems = {
+		'murder': {
+			id: 'murder',
+			title: 'Murder Mystery',
+			client: 'SMU Web Development Bootcamp',
+			date: 'December 2018',
+			description: "Creepy Choose Your Own Adventure game built with Node JS where users are guided through a series of choices to determine the story's outcome. The users are awarded badges for the completion of each ending and the Passport login feature makes it easy to keep your place.",
+			link1: 'https://cyoa-murder-mystery.herokuapp.com',
+			link2: 'https://github.com/reneewysocki/murder-mystery',
+			mainImage: 'img/web-portfolio/murder-mystery/murder-mystery.png',
+			image1: 'img/web-portfolio/murder-mystery/murder-dashboard.png',
+			image2: 'img/web-portfolio/murder-mystery/murder-mystery-play.png',
+			tags: ['web development']
+		},
+		'up-chiro': {
+			id: 'up-chiro',
+			title: 'Upstate Chiropractic and Wellness',
+			client: 'Upstate Chiropractic and Wellness',
+			date: 'January 2019',
+			description: "Corporate Website",
+			link1: 'http://upstatechiropractic.net/',
+			mainImage: 'img/web-portfolio/upstate-chiropractic/upstate-chiropractic-full.jpg',
+			image1: 'img/web-portfolio/upstate-chiropractic/upstate-chiropractic-services.jpg',
+			tags: ['web development']
+		},
+		'fork': {
+			id: 'fork',
+			title: 'Fork❤️Spoon',
+			client: 'SMU Web Development Bootcamp',
+			date: 'November 2018',
+			description: "Find someone who shares your love for food! This dating app bases it's matches on your eating preferences.",
+			link1: 'https://forkandspoon.herokuapp.com/',
+			link2: 'https://github.com/reneewysocki/fork-and-spoon',
+			mainImage: 'img/web-portfolio/fork-spoon.png',
+			image1: 'img/web-portfolio/fork-spoon2.png',
+			tags: ['web development']
+		},
+		'out-advent': {
+			id: 'out-advent',
+			title: 'Outdoor Adventures',
+			client: 'SMU Web Development Bootcamp',
+			date: 'October 2018',
+			description: "Finding free outdoor activities can be difficult and time consuming, checking multiple websites for pieces of information. This application focuses on motivating the population to explore nature in their own town or connecting them to adventures in a new city. Use the geolocation feature for your location to be pin-pointed on the map, or enter any city in the world to find free outdoor adventures within a set radius.",
+			link1: 'https://reneewysocki.github.io/outdoor-adventure/',
+			link2: 'https://github.com/reneewysocki/outdoor-adventure',
+			mainImage: 'img/web-portfolio/outdoor-adventure2.png',
+			image1: 'img/web-portfolio/outdoor-adventure.png',
+			tags: ['web development']
+		},
+		'scraper': {
+			id: 'scraper',
+			title: 'Bench Scraper',
+			client: 'SMU Web Development Bootcamp',
+			date: 'January 2018',
+			description: "Scrapes recipes from top websites and allows you to take persistent notes.",
+			link1: 'https://benchscraper.herokuapp.com/',
+			link2: 'https://github.com/reneewysocki/benchscraper',
+			mainImage: 'img/web-portfolio/benchscraper.png',
+			tags: ['web development']
+		},
 		'twm-boom': {
 			id: 'twm-boom',
 			title: 'BOOM!',
@@ -207,13 +266,14 @@ $(document).ready(function () {
 			mainImage: 'img/gd-portfolio/Valentines-Getaway-Giveaway.jpg',
 			tags: ['social media'],
 		},
-		'cn-merry': {
-			id: 'cn-merry',
+		'gvwt-merry': {
+			id: 'gvwt-merry',
 			title: 'Eat, Drink, and Be Merry',
-			client: 'Crane Network',
+			client: 'Grapevine Wine Tours',
 			date: 'December 2018',
 			description: 'Christmas Card',
 			mainImage: 'img/gd-portfolio/eat-drink-and-be-merry-christmas-card.jpg',
+			image1: 'img/gd-portfolio/facebook-christmas-card.jpg',
 			tags: ['print media'],
 		},
 		'gvwt-thankful': {
@@ -252,6 +312,117 @@ $(document).ready(function () {
 			mainImage: 'img/gd-portfolio/Crane-Network-Enter-to-Win (2018_06_06 20_47_35 UTC).jpg',
 			tags: ['social media'],
 		},
+		'cn-dad': {
+			id: 'cn-dad',
+			title: "Happy Father's Day",
+			client: 'Crane Network',
+			date: 'June 2017',
+			description: 'Web and Social Media Promotion',
+			mainImage: 'img/gd-portfolio/Kristina-Fathers-Day-Sale (2018_02_10 20_30_25 UTC).jpg',
+			tags: ['social media'],
+		},
+		'gvwt-tree': {
+			id: 'gvwt-tree',
+			title: "The Wine is So Delightful",
+			client: 'Grapevine Wine Tours',
+			date: 'December 2018',
+			description: 'Web and Social Media Promotion',
+			mainImage: 'img/gd-portfolio/wine-so-delightful-christmas-tree-promo.jpg',
+			tags: ['social media'],
+		},
+		'cn-tri-trade': {
+			id: 'cn-tri-trade',
+			title: "Crane Network Trade Show Backdrop",
+			client: 'Grapevine Wine Tours',
+			date: 'August 2017',
+			description: 'Trade Show Backdrop',
+			mainImage: 'img/gd-portfolio/Trade-Show-Banner-Backdrop-copy (2018_02_10 19_15_37 UTC).jpg',
+			tags: ['3D media', 'backdrop'],
+		},
+		'cn-plooz': {
+			id: 'cn-plooz',
+			title: "Rentapalooza",
+			client: 'Crane Network',
+			date: 'July 2017',
+			description: 'Web and Social Media Promotion',
+			mainImage: 'img/gd-portfolio/rentapalooza-instagram (2018_02_10 19_15_37 UTC).jpg',
+			tags: ['social media'],
+		},
+		'gwt-vets': {
+			id: 'gvwt-vets',
+			title: "Veteran's Day",
+			client: 'Grapevine Wine Tours',
+			date: 'November 2018',
+			description: 'Web and Social Media Promotion',
+			mainImage: 'img/gd-portfolio/veterans-day.jpg',
+			tags: ['social media'],
+		},
+		'cn-math': {
+			id: 'cn-math',
+			title: "Simple Solutions to Complicated Problems",
+			client: 'Crane Network',
+			date: 'February 2017',
+			description: 'Web and Social Media Promotion',
+			mainImage: 'img/gd-portfolio/International-Cranes-February-Half-Page (2018_02_10 20_30_25 UTC).jpg',
+			tags: ['social media'],
+		},
+		'cn-3dlap': {
+			id: 'cn-3dlap',
+			title: "Blast Your Cranes",
+			client: 'Crane Network',
+			date: 'February 2018',
+			description: 'Web and Email Promotion',
+			mainImage: 'img/gd-portfolio/Crane-Laptop-Email-Blast-Shadow (2018_02_10 20_30_25 UTC).jpg',
+			tags: [],
+		},
+		'cn-build': {
+			id: 'cn-build',
+			title: "Build Your Network",
+			client: 'Crane Network',
+			date: 'July 2017',
+			description: 'Web and Social Media Promotion',
+			mainImage: 'img/gd-portfolio/BuildYourNetwork--Generic (2018_02_10 20_30_25 UTC).jpg',
+			tags: ['social media'],
+		},
+		'cn-coupon': {
+			id: 'cn-coupon',
+			title: "10% Off Coupon",
+			client: 'Crane Network',
+			date: 'August 2016',
+			description: 'Printed Coupons',
+			mainImage: 'img/gd-portfolio/CNCoupon/coupon-front (2018_02_10 20_30_25 UTC).jpg',
+			image1: 'img/gd-portfolio/CNCoupon/coupon-back (2018_02_10 20_30_25 UTC).jpg',
+			tags: ['print media'],
+		},
+		'cn-biker': {
+			id: 'cn-biker',
+			title: "Biker T-Shirts",
+			client: 'Crane Network',
+			date: 'June 2017',
+			description: 'T-Shirt Design',
+			mainImage: 'img/gd-portfolio/CN-Biker-Shirt/crane-network-biker-tshirt-wings (2018_02_10 20_30_25 UTC).jpg',
+			image1: 'img/gd-portfolio/CN-Biker-Shirt/black-crane-network-wings-shirt.png',
+			tags: ['3D media', 'print media'],
+		},
+		'cn-20': {
+			id: 'cn-20',
+			title: "Anniversary Badges",
+			client: 'Crane Network',
+			date: 'January 2018',
+			description: 'T-Shirt Design',
+			mainImage: 'img/gd-portfolio/CN-20/20-year-logo-badge.png',
+			image1: 'img/gd-portfolio/CN-20/20-year-ribbon-banner-years.png',
+			tags: ['social media'],
+		},
+		'cn-all': {
+			id: 'cn-all',
+			title: "Dealer Special",
+			client: 'Crane Network',
+			date: 'September 2017',
+			description: 'Printed Promotional Flyer',
+			mainImage: 'img/gd-portfolio/Dealer-Special.jpg',
+			tags: ['print media'],
+		},
 	}
 
 	for (prop in portfolioItems) {
@@ -261,24 +432,36 @@ $(document).ready(function () {
 		let client = portfolioItems[prop].client;
 		let date = portfolioItems[prop].date;
 		let description = portfolioItems[prop].description;
+		let link1 = portfolioItems[prop].link1;
+		let link2 = portfolioItems[prop].link2;
 		let image = portfolioItems[prop].mainImage;
 		let image1 = portfolioItems[prop].image1;
+		let image2 = portfolioItems[prop].image2;
 		let tags = portfolioItems[prop].tags.join(',  ');
 		
-
 		let cardImage = '<img class="card-img" src="' + image + '" alt="' + title + '">';
-		
+		let card = $('<div class="card" data-toggle="modal" data-target="#modal' + id + '">' + cardImage + '</div>')
 
 		if (image1) {
 			let secImg = '<img class="folio-img-sec" src="' + image1 + '" alt="' + title + '">';
-			var bodyImage = '<img class="folio-img" src="' + image + '" alt="' + title + '">' + secImg + '';
+			var bodyImage = '<img class="folio-img" src="' + image + '" alt="' + title + '">' + secImg;
+			if (image2) {
+				let thirdImg = '<img class="folio-img-sec" src="' + image2 + '" alt="' + title + '">';
+				var bodyImage = '<img class="folio-img" src="' + image + '" alt="' + title + '">' + secImg + thirdImg ;
+			}
+			
 		} else {
 			var bodyImage = '<img class="folio-img" src="' + image + '" alt="' + title + '">';
 		}
 
-		let card = $('<div class="card" data-toggle="modal" data-target="#modal' + id + '">' + cardImage + '</div>')
-
-		let modalBodyContent = '<p>' + description + '</p><p>' + date + '</p><p>' + client + '</p><div>' + bodyImage + '</div><div class="tags">Tags: ' + tags + '</div>';
+		if (link1) {
+			var modalBodyContent = '<p>' + description + '</p><p><a href="' + link1 + '">Click Here for Live Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="' + link2 + '">Click Here to View GitHub Repo</a></p><p>' + date + '</p><p>' + client + '</p><div>' + bodyImage + '</div><div class="tags">Tags: ' + tags + '</div>';
+			if (!link2) {
+			var modalBodyContent = '<p>' + description + '</p><p><a href="' + link1 + '">Click Here for Live Demo</a></p><p>' + date + '</p><p>' + client + '</p><div>' + bodyImage + '</div><div class="tags">Tags: ' + tags + '</div>';
+			}
+		} else {
+			var modalBodyContent = '<p>' + description + '</p><p>' + date + '</p><p>' + client + '</p><div>' + bodyImage + '</div><div class="tags">Tags: ' + tags + '</div>';
+		}
 
 		let modalCloseTop = '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
 		let modalHeader = '<div class="modal-header"><h5 class="modal-title" id="modal' + id + 'Label">' + title + '</h5>' + modalCloseTop + '</div>';
