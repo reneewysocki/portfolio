@@ -395,6 +395,7 @@ body {
 .about-photo {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    padding-top: 16px;
 }
 
 .about-photo:hover {
@@ -460,7 +461,7 @@ body {
 
 /*------------------MEDIA QUERIES----------------------------*/
 
-/* SMALL SCREENS */
+/* EXTRA SMALL SCREENS */
 @media only screen and (max-width: 550px) {
     #portfolio-content {
         column-count: 1
@@ -479,7 +480,17 @@ body {
         margin: 4px;
         border-radius: 8px;
     }
+    .box-content h4 {
+        font-size: 1rem;
+    }
 } 
+
+/* SMALL SCREENS */
+@media only screen and (min-width: 550px) {
+    #portfolio-content {
+        column-count: 2
+    }
+}
 
 /* MEDIUM SCREENS */
 @media only screen and (min-width: 768px) {

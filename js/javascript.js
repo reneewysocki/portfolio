@@ -1,6 +1,15 @@
 $(document).ready(function () {
 
 	const portfolioItems = {
+		'unwind': {
+			id: 'unwind',
+			title: 'Unwind',
+			client: 'Grapevine Wine Tours',
+			date: 'April 2019',
+			description: "Social Media Promotion",
+			mainImage: 'img/gd-portfolio/unwind.png',
+			tags: ['graphic design', 'social media']
+		},
 		'crane-life': {
 			id: 'crane-life',
 			title: 'CraneLife Trade Show Backdrop',
@@ -16,11 +25,12 @@ $(document).ready(function () {
 			title: 'Upstate Chiropractic and Wellness',
 			client: 'Upstate Chiropractic and Wellness',
 			date: 'January 2019',
-			description: "Corporate Website",
+			description: "Logo and Corporate Website",
 			link1: 'http://upstatechiropractic.net/',
 			mainImage: 'img/web-portfolio/upstate-chiropractic/upstate-chiropractic-full.jpg',
-			image1: 'img/web-portfolio/upstate-chiropractic/upstate-chiropractic-services.jpg',
-			tags: ['web development']
+			image1: 'img/web-portfolio/upstate-chiropractic/logo.png',
+			image2: 'img/web-portfolio/upstate-chiropractic/upstate-chiropractic-services.jpg',
+			tags: ['web development', 'logo']
 		},
 		'murder': {
 			id: 'murder',
@@ -57,6 +67,17 @@ $(document).ready(function () {
 			mainImage: 'img/web-portfolio/fork-spoon.PNG',
 			image1: 'img/web-portfolio/fork-spoon2.png',
 			tags: ['web development']
+		},
+		'paul-coroneos': {
+			id: 'paul-coroneos',
+			title: 'Paul Coroneos Business Card',
+			client: 'Paul Coroneos',
+			date: 'October 2018',
+			description: "Business Card Design",
+			mainImage: 'img/gd-portfolio/PaulCoroneosCards/paul-coroneos-card.png',
+			image1: 'img/gd-portfolio/PaulCoroneosCards/paul-coroneos-front.jpg',
+			image2: 'img/gd-portfolio/PaulCoroneosCards/paul-coroneos-back.jpg',
+			tags: ['graphic design', 'business cards']
 		},
 		'out-advent': {
 			id: 'out-advent',
@@ -219,6 +240,16 @@ $(document).ready(function () {
 			mainImage: 'img/gd-portfolio/Merry-Boom-Dollies-Sweater-TWM (2018_06_05 20_43_50 UTC).jpg',
 			tags: ['social media'],
 		},
+		'gwt-cert': {
+			id: 'gwt-cert',
+			title: 'Lunch/Dinner Gift Certificate',
+			client: 'Grapevine Wine Tours',
+			date: 'November 2017',
+			description: 'Gift Certificates',
+			mainImage: 'img/gd-portfolio/GWT-Gift-Cert/GWT-Dinner-Gift-Certificate (2018_02_10 18_36_35 UTC).jpg',
+			image1: 'img/gd-portfolio/GWT-Gift-Cert/GWT-Lunchr-Gift-Certificate (2018_02_10 19_15_37 UTC).jpg',
+			tags: ['print media'],
+		},
 		'cn-all': {
 			id: 'cn-all',
 			title: "Dealer Special",
@@ -256,15 +287,6 @@ $(document).ready(function () {
 			image1: 'img/gd-portfolio/back-to-the-grind-long.jpg',
 			tags: ['social media'],
 		},
-		'cn-build': {
-			id: 'cn-build',
-			title: "Build Your Network",
-			client: 'Crane Network',
-			date: 'July 2017',
-			description: 'Web and Social Media Promotion',
-			mainImage: 'img/gd-portfolio/BuildYourNetwork--Generic (2018_02_10 20_30_25 UTC).jpg',
-			tags: ['social media'],
-		},
 		'twm-boom': {
 			id: 'twm-boom',
 			title: 'BOOM!',
@@ -274,6 +296,25 @@ $(document).ready(function () {
 			mainImage: 'img/gd-portfolio/TWM-Boom.jpg',
 			image1: 'img/gd-portfolio/TWM-Boom-Square.jpg',
 			tags: ['graphic design', 'social media', 'print media']
+		},
+		'cn-relax': {
+			id: 'cn-relax',
+			title: "Relax and Enjoy",
+			client: 'Crane Network',
+			date: 'July 2017',
+			description: 'Web and Social Media Promotion',
+			mainImage: 'img/gd-portfolio/relax-and-enjoy (2018_02_10 18_36_35 UTC).jpg',
+			image1: 'img/gd-portfolio/Relax-and-Enjoy-Your-Vacation-Square (2018_02_10 19_15_37 UTC).jpg',
+			tags: ['3D media', 'backdrop'],
+		},
+		'cn-build': {
+			id: 'cn-build',
+			title: "Build Your Network",
+			client: 'Crane Network',
+			date: 'July 2017',
+			description: 'Web and Social Media Promotion',
+			mainImage: 'img/gd-portfolio/BuildYourNetwork--Generic (2018_02_10 20_30_25 UTC).jpg',
+			tags: ['social media'],
 		},
 		'cn-plooz': {
 			id: 'cn-plooz',
@@ -465,9 +506,9 @@ $(document).ready(function () {
 		}
 
 		if (link1) {
-			var modalBodyContent = '<p>' + description + '</p><p><a href="' + link1 + '">Click Here for Live Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="' + link2 + '">Click Here to View GitHub Repo</a></p><p>' + date + '</p><p>' + client + '</p><div>' + bodyImage + '</div><div class="tags">Tags: ' + tags + '</div>';
+			var modalBodyContent = '<p>' + description + '</p><p><a href="' + link1 + '" target="_blank" >Click Here for Live Demo</a>&nbsp&nbsp | &nbsp&nbsp<a href="' + link2 + '">Click Here to View GitHub Repo</a></p><p>' + date + '</p><p>' + client + '</p><div>' + bodyImage + '</div><div class="tags">Tags: ' + tags + '</div>';
 			if (!link2) {
-				var modalBodyContent = '<p>' + description + '</p><p><a href="' + link1 + '">Click Here for Live Demo</a></p><p>' + date + '</p><p>' + client + '</p><div>' + bodyImage + '</div><div class="tags">Tags: ' + tags + '</div>';
+				var modalBodyContent = '<p>' + description + '</p><p><a href="' + link1 + '" target="_blank">Click Here for Live Demo</a></p><p>' + date + '</p><p>' + client + '</p><div>' + bodyImage + '</div><div class="tags">Tags: ' + tags + '</div>';
 			}
 		} else {
 			var modalBodyContent = '<p>' + description + '</p><p>' + date + '</p><p>' + client + '</p><div>' + bodyImage + '</div><div class="tags">Tags: ' + tags + '</div>';
